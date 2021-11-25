@@ -1,0 +1,186 @@
+@media only screen and (min-width:992px) {
+    .mainContainer .bottomWrp {
+        box-shadow: 0px 1px 7px 2px #ccc;
+        height: 80px;
+        padding: 10px 15px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .sidebar {
+        width: 70px;
+    }
+    .sidebar .nav .nav-item .nav-link span.menutitle {
+        display: none;
+    }
+    .sidebar  .collapseMenu li a span.menutitle {
+        display: none;
+    }
+    .sidebar .arrowupDown{
+        display:none;
+    }
+    .sidebar .sidebarTitle{
+        display: none;
+    }
+    .sidebar .siteLogo img {
+        width: 42px;
+    }
+    .main-panel {
+        width: calc(100% - 70px);
+    }
+    .mainContainer .searchFilter .form-control {
+        width: 100%;
+    }
+    .detailBox {
+        width: 100%;
+    }
+    .detailBox .fieldGroup .form-control {
+        width: 100%;
+    }
+    .pageBreadcumb .breadcumb {
+        flex-wrap: wrap;
+    }
+    .mainContainer .bottomWrp {
+        height: 57px;
+        padding: 5px 15px;
+        box-shadow: 0px 1px 7px 2px #ccc;
+    }
+    .btnBlueBig {
+        height: 40px;
+    }
+}
+
+
+@media only screen and (max-width:771px) {
+    .mainContainer .searchFilter {
+        display: flex;
+        width: 100%;
+    }
+    .mainContainer .serachField {
+        margin: 10px 0 0 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .mainContainer .serachField .upload a {
+        margin-left: 0;
+    }
+    .mainContainer .serachField .upload  {
+        margin-top: 10px;
+    }
+    .main_top_box {
+        padding: 5px 44px 0 44px;
+    }
+    .pageBreadcumb .breadcumb {
+        flex-wrap: wrap;
+    }
+    .btnBlueBig {
+        height: 40px;
+    }
+    .mainContainer .bottomWrp {
+        height: 57px;
+        padding: 5px 15px;
+        box-shadow: 0px 1px 7px 2px #ccc;
+    }
+    .detailBox {
+        width: 100%;
+    }
+    .detailBox.marginTop40 {
+        margin-top: 10px;
+    }
+    .mainContainer {
+        margin-top: 184px;
+        padding: 15px 20px 24px 20px;
+    }
+    .detailBox .fieldGroup .form-control {
+        width: 100%;
+    }
+    .from-message .replyTo {
+        flex-wrap: wrap ;
+    }
+    .uploadAttachment .form-control {
+        width: 100%;
+    }
+    .progressComponent .pcBox .pcTitle {
+        font-size: 15px;
+        text-align: center;
+    }
+    .detailBox .detailHeading h2 {
+        font-size: 22px;
+    }
+    .progressBar,
+    .progressBar ul {
+        width: 100%;
+    }
+    .progressBar .pogressList li {       
+        font-size: 16px;
+        padding-right: 0;
+        width: 20%;
+        text-align: center;
+        line-height: 18px;
+    }
+    .progressBar .pogressList li.active {
+        font-size: 16px;
+    }
+    .messageBox .messageTitle {
+        font-size: 18px;
+    }
+    .to-message-v2 .leftPanel .replyTo {
+        flex-wrap: wrap;
+    }
+    .counterRow .counterInfo .infoTitle {
+        font-size: 14px;
+    }
+    .counterRow .counterGraph .counterCircel {
+        height: 75px;
+        width: 75px;
+    }
+    .mergeTags .addMore .addIcon {
+        height: 20px;
+        width: 20px;
+        font-size: 12px;
+    }
+    .uploadContainer .uploadOuter {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:550px) {
+    .radioWrap {
+        margin-top: 20px;
+    }
+    .progressComponent .pcBox .pcTitle {
+        font-size: 13px;
+    }
+    .from-message .replyTo .supportText {
+        color: #333333;
+        margin-left: 7px;
+        display: block;
+    }
+    .toggleBox .toggleText {
+        font-size: 20px;
+    }
+    .to-message-v2 .leftPanel .uploadAttachment {
+        width: 100%;
+    }
+    .mergeTags .field {
+        width: 60%;
+        margin-right: 20px;
+    }
+    .mergeTags {
+        justify-content: space-between;
+    }
+    .to-message-v2 .rightPanel {
+        padding-left: 0;
+        border-left: none;
+        margin-top: 30px;
+    }
+    .counterRow {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 15px;
+    }
+    .main_top_box {
+        padding: 5px 24px 0 24px;
+    }
+    
+}

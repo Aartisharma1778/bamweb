@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAM</title>
+
+    <!-- Adding Style files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <div class="container-scroller">
+        <div class="container-fluid page-body-wrapper">
+            <nav class="sidebar sidebar-offcanvas">
+                <div class="siteLogo">
+                    <img src="assets/images/logo.png" alt="logo" />
+                </div>
+                <div class="sidebarTitle">Campaign Manager</div>
+                <ul class="nav">
+                    <li class="nav-item nav-icon hasChild">
+                        <a href="javascript:;" class="nav-link">
+                            <i class="fa fa-eye"></i>
+                            <span class="menutitle">Overview</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li class="sub-nav-item item-active">
+                                <a href="javascript:;" class="nav-link">
+                                    <i class="fa fa-envelope-o"></i>
+                                    <span class="menutitle">Email</span>
+                                </a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:;" class="nav-link">
+                                    <i class="fa fa-commenting-o"></i>
+                                    <span class="menutitle">SMS</span>
+                                </a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:;" class="nav-link">
+                                    <i class="fa fa-globe"></i>
+                                    <span class="menutitle">Web Push</span>
+                                </a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:;" class="nav-link">
+                                    <i class="fa fa-mobile"></i>
+                                    <span class="menutitle">Push</span>
+                                </a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:;" class="nav-link">
+                                    <i class="fa fa-facebook"></i>
+                                    <span class="menutitle">Facebook</span>
+                                </a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:;" class="nav-link">
+                                    <i class="fa fa-google"></i>
+                                    <span class="menutitle">Google</span>
+                                </a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:;" class="nav-link">
+                                    <i class="fa fa-whatsapp"></i>
+                                    <span class="menutitle">Whatsapp</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-icon hasChild">
+                        <a href="javascript:;" class="nav-link">
+                            <i class="fa fa-podcast"></i>
+                            <span class="menutitle">Channels</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li class="sub-nav-item item-active">
+                                <a href="javascript:;" class="nav-link">
+                                    <i class="fa fa-envelope-o"></i>
+                                    <span class="menutitle">Email</span>
+                                </a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:;" class="nav-link">
+                                    <i class="fa fa-commenting-o"></i>
+                                    <span class="menutitle">SMS</span>
+                                </a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:;" class="nav-link">
+                                    <i class="fa fa-globe"></i>
+                                    <span class="menutitle">Web Push</span>
+                                </a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:;" class="nav-link">
+                                    <i class="fa fa-mobile"></i>
+                                    <span class="menutitle">Push</span>
+                                </a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:;" class="nav-link">
+                                    <i class="fa fa-facebook"></i>
+                                    <span class="menutitle">Facebook</span>
+                                </a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:;" class="nav-link">
+                                    <i class="fa fa-google"></i>
+                                    <span class="menutitle">Google</span>
+                                </a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:;" class="nav-link">
+                                    <i class="fa fa-whatsapp"></i>
+                                    <span class="menutitle">Whatsapp</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="collapseMenu">
+                    <li>
+                        <a href="javascript:;" class="nav-link" id="logout">
+                            <i class="fa fa-sign-out"></i>
+                            <span class="menutitle">Logout</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="nav-link" id="collapseSidebar">
+                            <i class="fa fa-long-arrow-left"></i>
+                            <span class="menutitle">Collapse</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /Sidebar ends -->
+
+
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <div class="main_top_box">
+                        <div class="pageHeader">
+                            <div class="contentTitle">
+                                <h1>Email</h1>
+                            </div>
+                        </div>
+                        <!-- /pageHeader -->
+
+                        <div class="pageBreadcumb">
+                            <div class="breadcumb">
+                                <a href="javascript:;"><img src="assets/images/home1.png"> Campagin Manager</a>
+                                <a href="javascript:;"> Channels</a>
+                                <span style="display: flex;">Email</span>
+                            </div>
+                        </div>
+                        <!-- /pageBreadcumb -->
+
+                        <div class="main_tab_wrap">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link " data-toggle="tab" href="#overview">Overview</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#listOfCompaigns"> List of Compaigns </a>
+                                </li>                             
+                            </ul>
+                        </div>
+                    </div>                
+
+                    <div class="mainContainer">
+                    <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div id="overview" class="tab-pane fade">
+                                <h3> Overview </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+
+
+                            <div id="listOfCompaigns" class="tab-pane active">
+
+                                <div class="serachField">
+                                    <div class="searchFilter">
+                                        <div class="form-group">
+                                            <input class="form-control" type="search" name="job_name" id="search_job_name" placeholder="Search ..." oninput="getFileName()">
+                                            <span class="searchIcon"><img class="img-fluid deskDiv" src="assets/images/search-icon.png"><img class="img-fluid mobDiv" src="assets/images/search-icon1.png"></span>
+                                        </div>
+                                        <div class="filter">
+                                            <a href="javascript:;"><img src="assets/images/filter1.png">Filter</a>
+                                        </div>
+                                    </div>
+                                    <div class="upload">
+                                        <a href="https://bamv2.aglprojects.co.in/request-job" class="blueBtn"><span><img src="assets/images/plus-icon.png"></span>Request a Job</a>
+                                    </div>
+                                </div>
+                                <!-- /serachField -->
+
+                                <div class="jobList">
+                                    <div class="table-responsive-lg">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th class=""> Campaign Name </th>
+                                                    <th class=""> Type</th>
+                                                    <th class=""> Status </th>
+                                                    <th class=""> Start Date </th>
+                                                    <th class=""> Delivered </th>
+                                                    <th class=""> Unique Opens </th>
+                                                    <th class=""> Unique Clicks </th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr>
+                                                    <td> <a href="javascript:;"> MarutiWagonRFestiveSeasonFacebook...</a></td>
+                                                    <td> Promotional </td>
+                                                    <td> Draft </td>
+                                                    <td> 24 Aug,2020 </td>
+                                                    <td> 10034 </td>	
+                                                    <td> 2474 </td>
+                                                    <td> 100384 </td>
+                                                </tr> 
+                                                
+                                                <tr>
+                                                    <td> <a href="javascript:;"> MarutiWagonRFestiveSeasonFacebook...</a></td>
+                                                    <td> Promotional </td>
+                                                    <td> Draft </td>
+                                                    <td> 24 Aug,2020 </td>
+                                                    <td> 452843 </td>	
+                                                    <td> 65463 </td>
+                                                    <td> 56478 </td>
+                                                </tr>  
+                                                
+                                                <tr>
+                                                    <td> <a href="javascript:;"> MarutiWagonRFestiveSeasonFacebook...</a></td>
+                                                    <td> Promotional </td>
+                                                    <td> Draft </td>
+                                                    <td> 24 Aug,2020 </td>
+                                                    <td> 452843 </td>	
+                                                    <td> 65463 </td>
+                                                    <td> 56478 </td>
+                                                </tr>  
+
+                                                <tr>
+                                                    <td> <a href="javascript:;"> MarutiWagonRFestiveSeasonFacebook...</a></td>
+                                                    <td> Promotional </td>
+                                                    <td> Draft </td>
+                                                    <td> 24 Aug,2020 </td>
+                                                    <td> 452843 </td>	
+                                                    <td> 65463 </td>
+                                                    <td> 56478 </td>
+                                                </tr>  
+
+                                                <tr>
+                                                    <td> <a href="javascript:;"> MarutiWagonRFestiveSeasonFacebook...</a></td>
+                                                    <td> Promotional </td>
+                                                    <td> Draft </td>
+                                                    <td> 24 Aug,2020 </td>
+                                                    <td> 452843 </td>	
+                                                    <td> 65463 </td>
+                                                    <td> 56478 </td>
+                                                </tr>  
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="pagination">
+                                        <div class="showingItem">Showing 1 to 10 of 25 enteries</div>
+                                        <ul>
+                                            <li class="active"><a href="">1</a></li>
+                                            <li><a href="">2</a></li>
+                                            <li><a href="">3</a></li>
+                                            <li><a href="">4</a></li>
+                                            <li><a href="">5</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div> 
+                                <!-- /Job List  -->
+                            </div> 
+                            <!-- Tab Pane -->
+
+                        </div>
+                        <!-- Tab-content -->
+                    </div>  
+                    <!-- MainContent -->
+                    
+                </div>
+            </div>
+            <!-- /Main Content ends --> 
+        </div>
+    </div>
+
+    <!-- Adding Javascript files -->
+    <script src="assets/js/jquery-2.2.4.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/WOW.js"></script>
+    <script src="assets/js/functions.js"></script>
+</body>
+</html>

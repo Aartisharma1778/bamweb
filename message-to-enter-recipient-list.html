@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAM</title>
+
+    <!-- Adding Style files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="container-scroller">
+        <div class="container-fluid page-body-wrapper">
+            <nav class="sidebar sidebar-offcanvas">
+                <div class="siteLogo">
+                    <img src="assets/images/logo.png" alt="logo" />
+                </div>
+                <div class="sidebarTitle">Campaign Manager</div>
+                <ul class="nav">
+                    <li class="nav-item nav-icon hasChild">
+                        <a href="javascript:;" class="nav-link">
+                            <i class="fa fa-eye"></i>
+                            <span class="menutitle">Overview</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li class="sub-nav-item item-active">
+                                <a href="javascript:;" class="nav-link">
+                                    <i class="fa fa-envelope-o"></i>
+                                    <span class="menutitle">Email</span>
+                                </a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:;" class="nav-link">
+                                    <i class="fa fa-commenting-o"></i>
+                                    <span class="menutitle">SMS</span>
+                                </a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:;" class="nav-link">
+                                    <i class="fa fa-globe"></i>
+                                    <span class="menutitle">Web Push</span>
+                                </a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:;" class="nav-link">
+                                    <i class="fa fa-mobile"></i>
+                                    <span class="menutitle">Push</span>
+                                </a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:;" class="nav-link">
+                                    <i class="fa fa-facebook"></i>
+                                    <span class="menutitle">Facebook</span>
+                                </a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:;" class="nav-link">
+                                    <i class="fa fa-google"></i>
+                                    <span class="menutitle">Google</span>
+                                </a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:;" class="nav-link">
+                                    <i class="fa fa-whatsapp"></i>
+                                    <span class="menutitle">Whatsapp</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-icon hasChild">
+                        <a href="javascript:;" class="nav-link">
+                            <i class="fa fa-podcast"></i>
+                            <span class="menutitle">Channels</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li class="sub-nav-item item-active">
+                                <a href="javascript:;" class="nav-link">
+                                    <i class="fa fa-envelope-o"></i>
+                                    <span class="menutitle">Email</span>
+                                </a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:;" class="nav-link">
+                                    <i class="fa fa-commenting-o"></i>
+                                    <span class="menutitle">SMS</span>
+                                </a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:;" class="nav-link">
+                                    <i class="fa fa-globe"></i>
+                                    <span class="menutitle">Web Push</span>
+                                </a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:;" class="nav-link">
+                                    <i class="fa fa-mobile"></i>
+                                    <span class="menutitle">Push</span>
+                                </a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:;" class="nav-link">
+                                    <i class="fa fa-facebook"></i>
+                                    <span class="menutitle">Facebook</span>
+                                </a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:;" class="nav-link">
+                                    <i class="fa fa-google"></i>
+                                    <span class="menutitle">Google</span>
+                                </a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:;" class="nav-link">
+                                    <i class="fa fa-whatsapp"></i>
+                                    <span class="menutitle">Whatsapp</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="collapseMenu">
+                    <li>
+                        <a href="javascript:;" class="nav-link" id="logout">
+                            <i class="fa fa-sign-out"></i>
+                            <span class="menutitle">Logout</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="nav-link" id="collapseSidebar">
+                            <i class="fa fa-long-arrow-left"></i>
+                            <span class="menutitle">Collapse</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /Sidebar ends -->
+
+
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <div class="main_top_box boxShadowTop">
+                        <div class="pageHeader">
+                            <div class="contentTitle">
+                                <h1>Campaign</h1>
+                            </div>
+                        </div>
+                        <!-- /pageHeader -->
+
+                        <div class="pageBreadcumb">
+                            <div class="breadcumb">
+                                <a href="javascript:;"><img src="assets/images/home1.png"> Campagin Manager</a>
+                                <a href="javascript:;"> Channels</a>
+                                <a href="javascript:;"> Email</a>
+                                <span style="display: flex;"> MarutiWagonRFestiveSeasonFacebook</span>
+                            </div>
+                        </div>
+                        <!-- /pageBreadcumb -->
+
+                        <div class="main_tab_wrap">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#campaignManager">Campaign
+                                        Manager</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#messages">Messages </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#preview">Preview </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mainContainer bgGray">
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div id="campaignManager" class="tab-pane fade">
+                                <div class="detailBoxContainer">
+                                    <div class="detailBox marginTop40">
+                                        <div class="detailHeading">
+                                            <h2>Campaign Details</h2>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="fieldGroup">
+                                                    <label>Campaign Name <span class="required">*</span></label>
+                                                    <input type="text" name="campaignName" placeholder="Campagin Name" value="MarutiWagonRFestiveSeasonFacebook" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="fieldGroup">
+                                                    <label>Campaign Type</label>
+                                                    <select name="campaignType" id="campaignType" class="form-control">
+                                                        <option value="">Select Type</option>
+                                                        <option selected value="Transactional">Transactional</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /row -->
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="fieldGroup">
+                                                    <label>Email Service Provider <span class="required">*</span></label>
+                                                    <select name="emailServiceProvider" id="emailServiceProvider" class="form-control">
+                                                        <option value="">Select Type</option>
+                                                        <option selected value="Value">Value</option>
+                                                        <option value="Gmail">Gmail</option>
+                                                        <option value="Outlook">Outlook</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /row ends-->
+                                    </div>
+                                    <!-- /detailBox ends -->
+                                    
+                                    <div class="toggleBox">
+                                        <div class="toggleText">Want to associate campagin ?</div>
+                                        <div class="switchWrap marginTop15">
+                                            <input type="checkbox" name="" id="" checked/>
+                                            <span class="switchLbl"></span>    
+                                        </div>
+                                    </div>
+                                    <!-- /toggleBox -->
+
+                                    <div class="detailBox marginTop40 detailMarginBottom">
+                                        <div class="detailHeading">
+                                            <h2>Associate Campaigns</h2>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="fieldGroup">
+                                                    <ul class="socialList">
+                                                        <li><a href="javascript:;" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                                                        <li><a href="javascript:;" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                                                        <li><a href="javascript:;" class="plus"><i class="fa fa-plus"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <!-- /row -->
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="fieldGroup">
+                                                    <label>Campaign Plateform <span class="required">*</span></label>
+                                                    <select name="emailServiceProvider" id="emailServiceProvider" class="form-control">
+                                                        <option value="">Select Plateform</option>
+                                                        <option selected value="Facebook">Facebook</option>
+                                                        <option value="LinkedIn">LinkedIn</option>
+                                                        <option value="Instagram">Instagram</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="fieldGroup">
+                                                    <label>Campaign Name <span class="required">*</span></label>
+                                                    <input type="text" name="campaignName" placeholder="Campagin Name" value="MarutiWagonRFestiveSeasonFacebook" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /row ends-->
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="fieldGroup">
+                                                    <button class="btnBlueBig">Add Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /row ends-->
+                                    </div>
+                                    <!-- /detailBox -->
+
+                                </div>
+                                <!-- /detailBoxContainer ends -->
+                            </div>
+                            <!-- /campaignManager ends -->
+                            <div id="messages" class="tab-pane active">
+                                <div class="progressComponent" style="display: none;">
+                                    <div class="pcBox active">
+                                        <div class="pcCenter">
+                                            <div class="dot"></div>
+                                            <div class="pcTitle">To-From</div>
+                                        </div>
+                                    </div>
+                                    <div class="pcBox">
+                                        <div class="pcCenter">
+                                            <div class="dot"></div>
+                                            <div class="pcTitle">Message Body</div>
+                                        </div>
+                                    </div>
+                                    <div class="pcBox">
+                                        <div class="pcCenter">
+                                            <div class="dot"></div>
+                                            <div class="pcTitle">Attachment & Variants</div>
+                                        </div>
+                                    </div>
+                                    <div class="blueLine"></div>
+                                </div>
+                                <!-- /progressComponent -->
+
+                                <div class="progressBar">
+                                    <ul class="pogressList">
+                                        <li class="active">To-From</li>
+                                        <li><i class="fa fa-angle-double-right"></i></li>
+                                        <li>Message Body</li>
+                                        <li><i class="fa fa-angle-double-right"></i></li>
+                                        <li>Attachment & Variants</li>
+                                    </ul>
+                                </div>
+                                <!-- /progressBar -->
+
+
+                                <!-- To Message Version 3 ( Enter recipient List) -->
+                                <div class="to-message to-message-v2 to-message-v3 enterRecipientList">
+                                    <div class="detailBox marginTop40">
+                                        <div class="detailHeading">
+                                            <h2>To</h2>
+                                            <div class="subText">Hey There! Don not forget to mention the receivers of this mail campaign.</div>
+                                        </div>
+                                        <div class="row">
+
+                                            <div class="col-sm-12">
+                                                <div class="leftPanel">
+                                                    <div class="segmentList">
+                                                        <img src="assets/images/typography.png" alt="">
+                                                        <span>Enter Recipient List</span>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-12 col-md-6">
+                                                            <div class="recipientListWap">
+                                                                <div class="listHeader">
+                                                                    <h5>Enter Recipient List</h5>
+                                                                    <div class="subHead">Enter comma seperated Email Recipients</div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <textarea name="" id="" cols="30" rows="7" class="form-control">diksha.garg@adglobal360.com, Abhimanyu.shrivastav@gmail.com, daksh.vishwanathan@adglobal360.com, mansi.hinduja@gmail.com, shrishti.jain@yahoo.in, jasmeetkaur@ymca.co.in, Abhinav.bindra@gov.ac.in, Akhilesh.yadav@upgov.ac.in, arvindkejriwal@gmail.com, primeministerindia@gov.ac.in, sakham.aggarwal@hotmail.com, sikha.garg@coforgetech.com
+                                                                    </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-6">
+                                                            <div class="recordSearch recipientListWap">
+                                                                <div class="listHeader">
+                                                                    <ul class="iconList">
+                                                                        <li><button><i class="fa fa-search"></i></button></li>
+                                                                        <li><button><i class="fa fa-download"></i></button></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <div class="chipsContainer">
+                                                                        <div class="chip">diksha.garg@adglobal360 <i class="close fa fa-times"></i></div>
+                                                                        <div class="chip">Abhinav.bindra@gov.ac.in<i class="close fa fa-times"></i></div>
+                                                                        <div class="chip">jasmeetkaur@ymca.co.in<i class="close fa fa-times"></i></div>
+                                                                        <div class="chip">Abhimanyu.shrivastav@gmail.com <i class="close fa fa-times"></i></div>
+                                                                        <div class="chip">daksh.vishwanathan@adglobal360.com <i class="close fa fa-times"></i></div>
+                                                                        <div class="chip">mansi.hinduja@gmail.com<i class="close fa fa-times"></i></div>
+                                                                        <div class="chip">shrishti.jain@yahoo.in<i class="close fa fa-times"></i></div>
+                                                                        <div class="chip">diksha.garg@adglobal360 <i class="close fa fa-times"></i></div>
+                                                                        <div class="chip">Abhinav.bindra@gov.ac.in<i class="close fa fa-times"></i></div>
+                                                                        <div class="chip">jasmeetkaur@ymca.co.in<i class="close fa fa-times"></i></div>
+                                                                        <div class="chip">Abhimanyu.shrivastav@gmail.com <i class="close fa fa-times"></i></div>
+                                                                        <div class="chip">daksh.vishwanathan@adglobal360.com <i class="close fa fa-times"></i></div>
+                                                                        <div class="chip">mansi.hinduja@gmail.com<i class="close fa fa-times"></i></div>
+                                                                        <div class="chip">shrishti.jain@yahoo.in<i class="close fa fa-times"></i></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                            <div class="addNewWrap">
+                                                                <a href="javascript:;" class="btnProcees">Add New</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>                                                    
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-12">
+                                                <div class="leftPanel">
+                                                    <div class="replyTo replyToPadd">
+                                                        <div class="saluation">
+                                                            <span class="replyTitle">Saluation <span style="color:red">*</span></span>
+                                                            <div class="switchWrap marginTop15">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <span class="switchLbl"></span>    
+                                                            </div>
+                                                            <label for="No">Yes</label>
+                                                        </div>
+                                                        <span class="supportText">(Add merge tags to display your recipient's name to make it look more personal and help avoid spam filters. It will show as, "To: John Jacob" instead of, "To: john.jacob@example.com".)</span>
+                                                    </div>
+                                                    <div class="mergeTags">
+                                                        <div class="field">
+                                                            <h5>Merge Tags</h5>
+                                                            <select name="mergeTags" id="mergeTags" class="form-control">
+                                                                <option value="">Select Merge Tag</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="addMore">
+                                                            <span class="addIcon">
+                                                                <i class="fa fa-plus"></i>
+                                                            </span>
+                                                            Add More
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /row ends-->
+                                    </div>
+                                <!-- /detailBox ends -->
+                                </div>
+
+                                <!-- To Message Version 2 -->
+                                <div class="to-message to-message-v2" style="display: none;">
+                                    <div class="detailBox marginTop40">
+                                        <div class="detailHeading">
+                                            <h2>To</h2>
+                                            <div class="subText">Hey There! Don not forget to mention the receivers of this mail campaign.</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-sm-7 col-md-8">
+                                                <div class="leftPanel">
+                                                    <div class="segmentList">
+                                                        <img src="assets/images/database.png" alt="">
+                                                        <span>Segment Recipient List</span>
+                                                    </div>
+                                                    <div class="uploadAttachment">
+                                                        <h4>Database Segment <i class="fa fa-download"></i></h4>
+                                                        <div class="uploadButtonWrap">
+                                                            <select name="" id="" class="form-control">
+                                                                <option value="">-select-</option>
+                                                                <option value="db[tablename][column_name]" selected="">db[tablename][column_name]</option>
+                                                                <option value="db[tablename][column_name]" selected="">db[tablename][column_name]</option>
+                                                                <option value="db[tablename][column_name]" selected="">db[tablename][column_name]</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="uploadPreview">
+                                                           <span class="recordSelected">1934 record selected</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="replyTo replyToPadd">
+                                                        <div class="saluation">
+                                                            <span class="replyTitle">Saluation <span style="color:red">*</span></span>
+                                                            <div class="switchWrap marginTop15">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <span class="switchLbl"></span>    
+                                                            </div>
+                                                            <label for="No">Yes</label>
+                                                        </div>
+                                                        <span class="supportText">(Add merge tags to display your recipient's name to make it look more personal and help avoid spam filters. It will show as, "To: John Jacob" instead of, "To: john.jacob@example.com".)</span>
+                                                    </div>
+                                                    <div class="mergeTags">
+                                                        <div class="field">
+                                                            <h5>Merge Tags</h5>
+                                                            <select name="mergeTags" id="mergeTags" class="form-control">
+                                                                <option value="">Select Merge Tag</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="addMore">
+                                                            <span class="addIcon">
+                                                                <i class="fa fa-plus"></i>
+                                                            </span>
+                                                            Add More
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-5 col-md-4">
+                                                <div class="rightPanel">
+                                                    <div class="counterRow">
+                                                        <div class="counterInfo">
+                                                            <div class="infoTitle">Total Users:</div>
+                                                            <div class="infoCounter">33,965</div>
+                                                        </div>
+                                                        <div class="counterGraph">
+                                                            <div class="counterCircel">
+                                                                <span>90.2%</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="counterRow">
+                                                        <div class="counterInfo">
+                                                            <div class="infoTitle">Known Users:</div>
+                                                            <div class="infoCounter">33,965</div>
+                                                        </div>
+                                                        <div class="counterGraph">
+                                                            <div class="counterDot">
+                                                                <div class="dot"></div>
+                                                                <span>Targeted</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="counterRow">
+                                                        <div class="counterInfo">
+                                                            <div class="infoTitle">Unknown Users:</div>
+                                                            <div class="infoCounter">0</div>
+                                                        </div>
+                                                        <div class="counterGraph">
+                                                            
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="counterRow">
+                                                        <div class="counterInfo">
+                                                            <div class="infoTitle">Reachable Users:</div>
+                                                            <div class="infoCounter">30, 882</div>
+                                                        </div>
+                                                        <div class="counterGraph">
+                                                            
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!-- /rightPanel -->
+                                            </div>
+                                        </div>
+                                        <!-- /row ends-->
+                                    </div>
+                                <!-- /detailBox ends -->
+                                </div>
+
+
+
+                                <div class="to-message" style="display: none;">
+                                    <div class="detailBox marginTop40">
+                                        <div class="detailHeading">
+                                            <h2>To</h2>
+                                            <div class="subText">Hey There! Don not forget to mention the receivers of this mail campaign.</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-4 padd">
+                                                <div class="messageBox">
+                                                    <div class="messageTitle">Segment Recipient List</div>
+                                                    <div class="messageImage">
+                                                        <img src="assets/images/database.png" alt="">
+                                                    </div>
+                                                    <div class="sampleTemplate"></div>
+                                                    <div class="messageBtnWrp">
+                                                        <a href="javascript:;" class="btnProcees">Procees</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4 padd">
+                                                <div class="messageBox">
+                                                    <div class="messageTitle">Enter Recipient List</div>
+                                                    <div class="messageImage">
+                                                        <img src="assets/images/typography.png" alt="">
+                                                    </div>
+                                                    <div class="sampleTemplate"></div>
+                                                    <div class="messageBtnWrp">
+                                                        <a href="javascript:;" class="btnProcees">Procees</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4 padd">
+                                                <div class="messageBox">
+                                                    <div class="messageTitle">Upload Recipient List</div>
+                                                    <div class="messageImage">
+                                                        <img src="assets/images/excel.png" alt="">
+                                                    </div>
+                                                    <div class="sampleTemplate">
+                                                        <i class="fa fa-eye"></i>
+                                                        <span class="sampleTxt">Sample Template</span>
+                                                    </div>
+                                                    <div class="messageBtnWrp">
+                                                        <a href="javascript:;" class="btnProcees">Procees</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /row ends-->
+                                    </div>
+                                <!-- /detailBox ends -->
+                                </div>
+                                <!-- /to-message -->
+
+                                <div class="from-message">
+                                    <div class="detailBox marginTop40">
+                                        <div class="detailHeading">
+                                            <h2>From</h2>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="fieldGroup">
+                                                    <label>From Name <span class="required">*</span></label>
+                                                    <input type="text" name="fromName" placeholder="Enter your Name" value="" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="fieldGroup">
+                                                    <label>From Email <span class="required">*</span></label>
+                                                    <input type="text" name="fromName" placeholder="Enter your email" value="" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="replyTo replyToPadd">
+                                                    <span class="replyTitle">Reply To</span>
+                                                    <div class="switchWrap marginTop15">
+                                                        <input type="checkbox" name="" id="">
+                                                        <span class="switchLbl"></span>    
+                                                    </div>
+                                                    <label for="No">No</label>
+                                                    <span class="supportText">(Enabling this will allow recipient to reply on the sender's email)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- CC Collaspe -->
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="replyTo replyToPadd">
+                                                    <span class="replyTitle">CC</span>
+                                                    <div class="switchWrap marginTop15">
+                                                        <input type="checkbox" name="" id="">
+                                                        <span class="switchLbl"></span>    
+                                                    </div>
+                                                    <label for="No">No</label>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                        <!-- BCC Collaspe -->
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="replyTo replyToPadd">
+                                                    <span class="replyTitle">BCC</span>
+                                                    <div class="switchWrap marginTop15">
+                                                        <input type="checkbox" name="" id="">
+                                                        <span class="switchLbl"></span>    
+                                                    </div>
+                                                    <label for="No">No</label>
+                                                 </div>
+                                            </div>
+                                        </div>                                       
+
+                                    </div>
+                                </div>
+                                <!-- /from-message -->
+
+                                <!-- From Message Expended -->
+                                <div class="from-message" style="display: none;">
+                                    <div class="detailBox marginTop40">
+                                        <div class="detailHeading">
+                                            <h2>From</h2>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="fieldGroup">
+                                                    <label>From Name <span class="required">*</span></label>
+                                                    <input type="text" name="fromName" placeholder="Enter your Name" value="" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="fieldGroup">
+                                                    <label>From Email <span class="required">*</span></label>
+                                                    <input type="text" name="fromName" placeholder="Enter your email" value="" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="replyTo borderBot">
+                                                    <span class="replyTitle">Reply To</span>
+                                                    <div class="switchWrap marginTop15">
+                                                        <input type="checkbox" name="" id="">
+                                                        <span class="switchLbl"></span>    
+                                                    </div>
+                                                    <label for="No">No</label>
+                                                    <span class="supportText">(Enabling this will allow recipient to reply on the sender's email)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- CC -->
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="replyTo">
+                                                    <span class="replyTitle">CC</span>
+                                                    <div class="switchWrap marginTop15">
+                                                        <input type="checkbox" name="" id="" checked>
+                                                        <span class="switchLbl"></span>    
+                                                    </div>
+                                                    <label for="No">Yes</label>
+                                                </div>
+                                            </div>                                           
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-1">
+                                                <div class="radioWrap">
+                                                    <input type="radio" name="" id="" checked>
+                                                    <span class="radioLbl">Database <span>Segment</span></span> 
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-1">
+                                                <div class="radioWrap">
+                                                    <input type="radio" name="" id="">
+                                                    <span class="radioLbl">Upload <span>Excel</span></span> 
+                                                </div>
+                                            </div>                                           
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="uploadAttachment uploadAttachmentborderBottom">
+                                                    <h4>Upload Attachment</h4>
+                                                    <div class="uploadSubText">Maximum file size: 10MB</div>
+                                                    <div class="uploadButtonWrap">
+                                                        <button class="btnProcees"><i class="fa fa-upload"></i> <span>Upload</span></button>
+                                                    </div>
+                                                    <div class="uploadPreview">
+                                                       <i class="fa fa-image"></i>
+                                                        <span class="previewText">CiazCarDiwaliFacebookAds.png</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- BCC -->
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="replyTo">
+                                                    <span class="replyTitle">BCC</span>
+                                                    <div class="switchWrap marginTop15">
+                                                        <input type="checkbox" name="" id="" checked>
+                                                        <span class="switchLbl"></span>    
+                                                    </div>
+                                                    <label for="No">Yes</label>
+                                                </div>
+                                            </div>                                           
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-1">
+                                                <div class="radioWrap">
+                                                    <input type="radio" name="" id="" checked>
+                                                    <span class="radioLbl">Database <span>Segment</span></span> 
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-1">
+                                                <div class="radioWrap">
+                                                    <input type="radio" name="" id="">
+                                                    <span class="radioLbl">Upload <span>Excel</span></span> 
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-1">
+                                                <div class="radioWrap">
+                                                    <input type="radio" name="" id="">
+                                                    <span class="radioLbl">Comma <span>Seperated</span> <span>Input</span></span> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="uploadAttachment">
+                                                    <h4>Database Segment</h4>
+                                                    <div class="uploadSubText">Maximum file size: 10MB</div>
+                                                    <div class="uploadButtonWrap">
+                                                        <!-- <button class="btnProcees"><i class="fa fa-upload"></i> <span>Upload</span></button> -->
+                                                        <select name="" id="" class="form-control">
+                                                            <option value="">-select-</option>
+                                                            <option value="db[tablename][column_name]" selected>db[tablename][column_name]</option>
+                                                            <option value="db[tablename][column_name]" selected>db[tablename][column_name]</option>
+                                                            <option value="db[tablename][column_name]" selected>db[tablename][column_name]</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="uploadPreview">
+                                                       <!-- <i class="fa fa-image"></i> <span class="previewText">CiazCarDiwaliFacebookAds.png</span> -->
+                                                       <span class="recordSelected">0 record selected</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- /from-message -->
+
+
+
+                            </div>
+                            <!-- /messages ends -->
+                            <div id="preview" class="tab-pane fade">
+                                <h3> Preview </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <!-- /preview ends -->
+
+                        </div>
+                        <!-- Tab-content -->
+
+                        <div class="bottomWrp">
+                            <div class="buttonWrp">
+                                <button class="btnBlueBig">Proceed</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- MainContent -->
+
+                </div>
+            </div>
+            <!-- /Main Content ends -->
+        </div>
+    </div>
+
+    <!-- Adding Javascript files -->
+    <script src="assets/js/jquery-2.2.4.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/WOW.js"></script>
+    <script src="assets/js/functions.js"></script>
+</body>
+
+</html>
